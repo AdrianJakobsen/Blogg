@@ -1,0 +1,22 @@
+{
+    "name": "uit/composer-demo",
+    "description": "Prosjektbeskrivelse",
+    "type": "project",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Frode Borli",
+            "email": "frode@ennerd.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "twig/twig": "^2.0@dev",
+        "sdidev/router": "dev-master"
+    },
+    "autoload": {
+        "psr-4": {
+            "": "src/"
+        }
+    }
+}

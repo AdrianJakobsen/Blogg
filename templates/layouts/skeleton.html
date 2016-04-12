@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        {% block head %}
+        <title>{{ pageTitle }}</title>
+        <link rel="stylesheet" type="text/css" href="/uit/1/assets/style.css" />
+        {% endblock %}
+    </head>
+    <body>
+        {% block body %}
+        <header>
+            <div class="logo">Vårt nettsted</div>
+            <nav class="menu">
+                <ul>
+                    <li><a href=".">Hjem</a></li>
+                    <li><a href="articles.php">Artikler</a></li>
+                </ul>
+            </nav>
+        </header>
+    
+        <article>
+            {% block contents %}
+            
+            Dette er default innhold i denne blokken.
+            
+            {% endblock %}
+        </article>
+        
+        
+        <footer>
+            Footer
+        </footer>
+        {% endblock %}
+    </body>
+</html>
